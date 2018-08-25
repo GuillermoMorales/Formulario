@@ -1,0 +1,69 @@
+<!--Guillermo Morales 00011417-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>  
+
+    <header>
+        <h1 align="center">Formulario de Registro</h1>
+    </header>
+    
+    <form action="fregistro.html" method="POST">
+        <fieldset>
+            <legend>Categoria</legend>
+
+            <fieldset>
+                <legend>Personal</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required><br><br>
+                
+                <label for="date">Fecha de Nacimiento:</label>
+                <input type="date" name="naciemiento" id="naciemiento" required><br><br>
+                
+                <label for="animal">Animal Favorito:</label>
+                <input type="text" name="animal" id="animal"   required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Cuenta</legend>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="animal" placeholder="ejemplo@yahoo.com" required><br><br>
+
+                <label for="pass">Contraseña (4 números):</label>
+                <input type="password" name="pass" id="pass" pattern="[0-9]{4}" required><br><br>
+
+                <label for="cpass">Confirmar Contraseña:</label>
+                <input type="password" name="cpass" id="cpass" pattern="[0-9]{4}" required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <label for="dir">Dirección:</label>
+                <input type="text" name="dir" id="dir" placeholder="Calle ejemplo casa #45" required><br><br>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" name="ciudad" id="ciudad" required ><br><br>
+
+                <label for="pais">Pais:</label>
+                <input type="text" name="pais" id="pais" required ><br><br>
+
+                <label for="tel">Teléfono:</label>
+                <input type="tel" name="tel" id="tel" pattern="[0-9]{8}" required>
+
+            </fieldset><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+</body>
+</html>
